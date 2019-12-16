@@ -33,9 +33,20 @@ const convertCurrency = async (fromCurrency, toCurrency, amount) => {
     return `${amount} ${fromCurrency} is worth ${convertedAmount} ${toCurrency}. You can spend these in the following countries: ${countries}`;
 };
   
-convertCurrency('EUR', 'HRK', 20)
-    .then((message) => {
-      console.log(message);
-    }).catch((error) => {
-      console.log(error.message);
+
+
+
+let btn = document.querySelector('#btn');
+
+    btn.addEventListener('click', async () => {
+      let currency = document.querySelector('#currencies').value;
+      let result = document.querySelector('#result');
+
+      let currenciesValue = document.querySelectorAll('[title]');
+
+      let selectedCurrencyCountry = [...currenciesValue].filter(item => item.value === currency)[0].title;
+
+      const result1 = await convertCurrency('EUR', currency, 30);
+
+      result.innerHTML = result1;
     });
