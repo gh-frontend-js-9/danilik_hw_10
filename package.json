@@ -1,0 +1,22 @@
+{
+  "name": "danilik_hw_10",
+  "version": "1.0.0",
+  "description": "",
+  "main": "currency-converter.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gh-frontend-js-9/danilik_hw_10.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gh-frontend-js-9/danilik_hw_10/issues"
+  },
+  "homepage": "https://github.com/gh-frontend-js-9/danilik_hw_10#readme",
+  "dependencies": {
+    "axios": "^0.19.0"
+  }
+}
